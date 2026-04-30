@@ -1,0 +1,23 @@
+{
+    "version": "0.5.0",
+    "description": "a grep that can search for multiple words at once and across paragraphs, powered by the RE# regex engine",
+    "homepage": "https://github.com/ieviev/resharp-grep",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ieviev/resharp-grep/releases/download/v0.5.0/re-x86_64-windows.exe",
+            "hash": "E4D3982B0E222330332B9EDE912EB1B9D90D9104BD76B0FD662207357EFC2DA7"
+        }
+    },
+    "bin": [["re-x86_64-windows.exe", "re"]],
+    "checkver": {
+        "github": "https://github.com/ieviev/resharp-grep/"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ieviev/resharp-grep/releases/download/v$version/re-x86_64-windows.exe"
+            }
+        }
+    }
+}
